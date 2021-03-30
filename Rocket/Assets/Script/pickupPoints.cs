@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class pickupPoints : MonoBehaviour
 {
-    
-    void Start()
+    private void OnTriggerEnter(Collider other)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+        if(other.gameObject.tag == "Player")
+        {
+            Score.scoreValue += 10;
+            Destroy(gameObject);
+        }
+    } 
+   
 }

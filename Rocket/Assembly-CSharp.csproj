@@ -36,15 +36,17 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Script\moveObject.cs" />
      <Compile Include="Assets\Script\RocketMove2.cs" />
+     <Compile Include="Assets\Script\buttonToLevel.cs" />
      <Compile Include="Assets\Script\Damage.cs" />
      <Compile Include="Assets\Script\RocketBehaviourScript.cs" />
+     <Compile Include="Assets\Script\pickupPoints.cs" />
      <Compile Include="Assets\Script\Health.cs" />
-     <Compile Include="Assets\Script\buttonToLevel.cs" />
      <Compile Include="Assets\Script\MyGameManager.cs" />
      <Compile Include="Assets\Script\Score.cs" />
      <Compile Include="Assets\Script\NextLevel.cs" />
-     <Compile Include="Assets\Script\pickupPoints.cs" />
+     <Compile Include="Assets\Script\rotate.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.2.3f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
