@@ -28,10 +28,10 @@ public class Health : MonoBehaviour {
 		respawnPosition = transform.position;
 		respawnRotation = transform.rotation;
 		
-		if (LevelToLoad=="") // default to current scene 
+	/*	if (LevelToLoad=="") // default to current scene 
 		{
 			LevelToLoad = Application.loadedLevelName;
-		}
+		}*/
 	}
 	
 	// Update is called once per frame
@@ -54,13 +54,13 @@ public class Health : MonoBehaviour {
 				switch(onLivesGone)
 				{
 				case deathAction.loadLevelWhenDead:
-					Application.LoadLevel (LevelToLoad);
+					//Application.LoadLevel (LevelToLoad);
 					break;
 				case deathAction.doNothingWhenDead:
 					// do nothing, death must be handled in another way elsewhere
 					break;
 				}
-				Destroy(gameObject);
+				//Destroy(gameObject);
 			}
 		}
 	}
